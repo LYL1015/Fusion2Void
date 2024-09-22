@@ -1,0 +1,32 @@
+{
+    "name": "MMnet",
+    "experim_name": "Experiments/MMnet",
+    "fusion_net": "FusionNet",
+    "rec_net": "RecNet",
+    "tags": "EXP1",
+    "test_dataset": "MFI-WHU-test",
+    "train_batch_size": 1,
+    "val_batch_size": 1,
+    "num_workers": 4,
+    "save_path_eval":"/save_images/",
+
+    "FusionNet":{
+        "feature_num":32
+    },
+
+    "RecNet":{
+        "feature_num":32
+    },
+
+
+    "MFI-WHU-test": {
+        "data_dir": {
+                    "data_dir_A":"./data/test/MFI-WHU/imgeA" ,
+                    "data_dir_B":"./data/test/MFI-WHU/imgeB"                                
+                    },
+
+        "is_label":true
+    }
+
+
+}
